@@ -57,9 +57,9 @@ namespace Famiry.Data
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Event> Groups => Set<Event>();
-        public DbSet<Comment> Plants => Set<Comment>();
-        public DbSet<User> GrowStagrowStages => Set<User>();
-        public DbSet<Photo> LightNeeds => Set<Photo>();
+        public DbSet<Event> Events => Set<Event>();
+        public DbSet<Comment> Comments => Set<Comment>();
+        public DbSet<User> Users => Set<User>();
+        public DbSet<Photo> Photos => Set<Photo>();
     }
 }

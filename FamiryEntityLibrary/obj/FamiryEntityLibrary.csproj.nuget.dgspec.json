@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\Famiry\\FamiryEntityLibrary\\FamiryEntityLibrary.csproj": {}
+    "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\FamiryEntityLibrary.csproj": {}
   },
   "projects": {
-    "D:\\Project\\Famiry\\FamiryEntityLibrary\\FamiryEntityLibrary.csproj": {
+    "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\FamiryEntityLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\Famiry\\FamiryEntityLibrary\\FamiryEntityLibrary.csproj",
+        "projectUniqueName": "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\FamiryEntityLibrary.csproj",
         "projectName": "FamiryEntityLibrary",
-        "projectPath": "D:\\Project\\Famiry\\FamiryEntityLibrary\\FamiryEntityLibrary.csproj",
+        "projectPath": "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\FamiryEntityLibrary.csproj",
         "packagesPath": "C:\\Users\\Aneesh\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\Famiry\\FamiryEntityLibrary\\obj\\",
+        "outputPath": "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
