@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Project\\FamiryGitHub\\Famiry\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\migrations\\20250626173358_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\migrations\\20250626173358_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D6F293AF-0348-463F-B920-01F3B3FC66B4}|FamiryEntityLibrary\\FamiryEntityLibrary.csproj|d:\\project\\famirygithub\\famiry\\famiryentitylibrary\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6F293AF-0348-463F-B920-01F3B3FC66B4}|FamiryEntityLibrary\\FamiryEntityLibrary.csproj|solutionrelative:famiryentitylibrary\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -42,24 +50,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Dockerfile",
+              "RelativeDocumentMoniker": "Famiry\\Dockerfile",
+              "ToolTip": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Dockerfile",
+              "RelativeToolTip": "Famiry\\Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-26T17:39:26.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20250626173358_init.cs",
+              "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Migrations\\20250626173358_init.cs",
+              "RelativeDocumentMoniker": "Famiry\\Migrations\\20250626173358_init.cs",
+              "ToolTip": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Migrations\\20250626173358_init.cs",
+              "RelativeToolTip": "Famiry\\Migrations\\20250626173358_init.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAgwFwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T17:34:05.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Entity.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\Entity.cs",
               "RelativeDocumentMoniker": "FamiryEntityLibrary\\Entity.cs",
               "ToolTip": "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\Entity.cs",
               "RelativeToolTip": "FamiryEntityLibrary\\Entity.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwEEAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwEEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-26T17:32:57.081Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Famiry.http",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Famiry.http",
               "RelativeDocumentMoniker": "Famiry\\Famiry.http",
@@ -72,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DataContext.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Data\\DataContext.cs",
               "RelativeDocumentMoniker": "Famiry\\Data\\DataContext.cs",
@@ -85,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Program.cs",
               "RelativeDocumentMoniker": "Famiry\\Program.cs",
@@ -98,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "EventController.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "Famiry\\Controllers\\EventController.cs",
@@ -111,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Famiry\\Controllers\\UserController.cs",
@@ -124,7 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CommentController.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "Famiry\\Controllers\\CommentController.cs",
@@ -137,7 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PhotoController.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Controllers\\PhotoController.cs",
               "RelativeDocumentMoniker": "Famiry\\Controllers\\PhotoController.cs",
