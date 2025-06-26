@@ -1,19 +1,18 @@
 ﻿using Famiry.Data;
 using Famiry.Service;
-using FamiryEntityLibrary.Transfer.Event;
+using FamiryEntityLibrary.Transfer.User;
 using Microsoft.AspNetCore.Mvc;
-
 
 namespace Famiry.Controllers
 {
-    [Route("api/event")]
+    [Route("api/user")]
     [ApiController]
-    public class EventController(EventService dataEntityService) : ControllerBase
+    public class UserController(UserService dataEntityService) : ControllerBase
     {
         /// <summary>
         ///     Сервис моделей.
         /// </summary>
-        private EventService DataEntityService { get; } = dataEntityService;
+        private UserService DataEntityService { get; } = dataEntityService;
 
         /// <summary>
         ///     Получить список растений.
@@ -23,10 +22,10 @@ namespace Famiry.Controllers
         /// <param name="ids">Список идентификаторов.</param>
         /// <returns>Результат операции со списком растений.</returns>
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<EventDTO>>> Get([FromQuery] string userId, [FromQuery] List<int>? ids)
+        public async Task<ActionResult<IEnumerable<UserDTO>>> Get([FromQuery] string userId, [FromQuery] List<int>? ids)
         {
-            var Events = (await DataEntityService.Get(((DataContext)DataEntityService.DataContext).Events, ids)).Select(x => x.ToDTO()).ToList();
-            return Ok(Events);
+            var Users = (await DataEntityService.Get(((DataContext)DataEntityService.DataContext).Users, ids)).Select(x => x.ToDTO()).ToList();
+            return Ok(Users);
         }
 
         /// <summary>
@@ -35,13 +34,13 @@ namespace Famiry.Controllers
         /// <param name="entities">Список растений.</param>
         /// <returns>Результат операции.</returns>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] List<RequestEventDTO> entities)
+        public async Task<IActionResult> Post([FromBody] List<RequestUserDTO> entities)
         {
-            var status = await DataEntityService.Set(((DataContext)DataEntityService.DataContext).Events, entities.Select(x => x.ToEntity()).ToList());
+            var status = await DataEntityService.Set(((DataContext)DataEntityService.DataContext).Users, entities.Select(x => x.ToEntity()).ToList());
 
             if (!status)
             {
-                return BadRequest("No Events were saved!");
+                return BadRequest("No Users were saved!");
             }
 
             return Ok();
@@ -55,15 +54,14 @@ namespace Famiry.Controllers
         [HttpDelete]
         public async Task<IActionResult> Delete([FromBody] List<int> ids)
         {
-            var status = await DataEntityService.Remove(((DataContext)DataEntityService.DataContext).Events, ids);
+            var status = await DataEntityService.Remove(((DataContext)DataEntityService.DataContext).Users, ids);
 
             if (!status)
             {
-                return BadRequest("No Events were deleted!");
+                return BadRequest("No Users were deleted!");
             }
 
             return Ok();
         }
     }
 }
-

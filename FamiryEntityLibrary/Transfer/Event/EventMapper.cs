@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FamiryEntityLibrary.Transfer.Event
 {
-    public static class Mapper
+    public static class EventMapper
     {
         public static FamiryEntityLibrary.Event ToEntity(this RequestEventDTO requestEvent)
         {

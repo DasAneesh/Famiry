@@ -1,25 +1,55 @@
+
+using Famiry.Data;
+using Famiry.Service;
+using FamiryEntityLibrary.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+builder.Configuration.SetBasePath(builder.Environment.ContentRootPath)
+    .AddEnvironmentVariables();
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHealthChecks();
+RegisterCoreServices(builder.Services);
+RegisterDataSources(builder.Services);
 
-var app = builder.Build();
+var application = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+application.UseSwagger();
+application.UseSwaggerUI();
+application.MapControllers();
+application.MapHealthChecks("/health");
+application.UseCors();
+
+await InitializeDataSources(application);
+
+
+application.Run();
+
+void RegisterCoreServices(IServiceCollection services)
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    services.AddScoped<PhotoService>();
+    services.AddScoped<CommentService>();
+    services.AddScoped<EventService>();
+    services.AddScoped<UserService>();
+    services.AddControllers();
 }
 
-app.UseHttpsRedirection();
+void RegisterDataSources(IServiceCollection services)
+{
+    var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
+    var dbName = Environment.GetEnvironmentVariable("POSTGRES_DB");
+    var dbUser = Environment.GetEnvironmentVariable("POSTGRES_USER");
+    var dbPassword = Environment.GetEnvironmentVariable("POSTGRES_PASSWORD");
+    var connectionString = $"Server={dbHost};Port=5432;Database={dbName};User Id={dbUser};Password={dbPassword};";
+    services.AddScoped(provider => new DataContext(new ContextConfiguration(connectionString, "famiry")));
+}
 
-app.UseAuthorization();
+async Task InitializeDataSources(WebApplication application)
+{
+    using var scope = application.Services.CreateScope();
+    var dataContext = scope.ServiceProvider.GetRequiredService<DataContext>();
+    await dataContext.TryInitializeAsync();
 
-app.MapControllers();
-
-app.Run();
+}
