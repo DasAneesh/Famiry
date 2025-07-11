@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Famiry")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cbe3e40023fdd1f3d6e91f6c1b180d55dd684d71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f0f90ad1a52dcb72e820b78882ffedbf2e8b6188")]
 [assembly: System.Reflection.AssemblyProductAttribute("Famiry")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Famiry")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

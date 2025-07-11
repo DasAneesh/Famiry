@@ -58,7 +58,7 @@ services:
           - backend
 
     pgadmin:
-        stop_grace_period: 30s
+        stop_grace_period: 30s 
         stop_signal: SIGTERM
         container_name: pgadmin_container
         image: dpage/pgadmin4:7.2
