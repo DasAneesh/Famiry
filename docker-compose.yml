@@ -78,11 +78,24 @@ services:
                     memory: 1G
         networks:
             - postgres
+
     famiry:
         image: ${DOCKER_REGISTRY-}famiry
         build:
             context: .
             dockerfile: Famiry/Dockerfile
+        environment:
+          DB_HOST: "postgres"
+          POSTGRES_DB: "famirydb"
+          POSTGRES_USER: "postgres"
+          POSTGRES_PASSWORD: "123Secret_a"
+        ports:
+            - "8888:8080"
+        networks:
+          - backend
+
+
+
             
 volumes:
   plants-data:
