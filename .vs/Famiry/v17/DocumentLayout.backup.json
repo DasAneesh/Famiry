@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "D:\\Project\\FamiryGitHub\\Famiry\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D6F293AF-0348-463F-B920-01F3B3FC66B4}|FamiryEntityLibrary\\FamiryEntityLibrary.csproj|d:\\project\\famirygithub\\famiry\\famiryentitylibrary\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F293AF-0348-463F-B920-01F3B3FC66B4}|FamiryEntityLibrary\\FamiryEntityLibrary.csproj|solutionrelative:famiryentitylibrary\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6F293AF-0348-463F-B920-01F3B3FC66B4}|FamiryEntityLibrary\\FamiryEntityLibrary.csproj|d:\\project\\famirygithub\\famiry\\famiryentitylibrary\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6F293AF-0348-463F-B920-01F3B3FC66B4}|FamiryEntityLibrary\\FamiryEntityLibrary.csproj|solutionrelative:famiryentitylibrary\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\service\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\service\\eventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{91E6002B-21DB-4983-8BBE-A44D386B4673}|docker-compose.dcproj|d:\\project\\famirygithub\\famiry\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{91E6002B-21DB-4983-8BBE-A44D386B4673}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -23,28 +47,12 @@
       "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\controllers\\commentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6F293AF-0348-463F-B920-01F3B3FC66B4}|FamiryEntityLibrary\\FamiryEntityLibrary.csproj|d:\\project\\famirygithub\\famiry\\famiryentitylibrary\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6F293AF-0348-463F-B920-01F3B3FC66B4}|FamiryEntityLibrary\\FamiryEntityLibrary.csproj|solutionrelative:famiryentitylibrary\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\famiry.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\famiry.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|d:\\project\\famirygithub\\famiry\\famiry\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{60210DF6-0090-4602-B66A-B02364E09959}|Famiry\\Famiry.csproj|solutionrelative:famiry\\controllers\\eventcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,19 +67,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Event.cs",
+              "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\Event.cs",
+              "RelativeDocumentMoniker": "FamiryEntityLibrary\\Event.cs",
+              "ToolTip": "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\Event.cs",
+              "RelativeToolTip": "FamiryEntityLibrary\\Event.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-14T16:09:55.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EventService.cs",
+              "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Service\\EventService.cs",
+              "RelativeDocumentMoniker": "Famiry\\Service\\EventService.cs",
+              "ToolTip": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Service\\EventService.cs",
+              "RelativeToolTip": "Famiry\\Service\\EventService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-11T18:01:45.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "docker-compose.yml",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\docker-compose.yml",
               "RelativeDocumentMoniker": "docker-compose.yml",
               "ToolTip": "D:\\Project\\FamiryGitHub\\Famiry\\docker-compose.yml",
               "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFoAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAF4AAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-06-26T17:40:04.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T17:40:04.566Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Dockerfile",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Dockerfile",
               "RelativeDocumentMoniker": "Famiry\\Dockerfile",
@@ -79,12 +111,11 @@
               "RelativeToolTip": "Famiry\\Dockerfile",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-26T17:39:26.425Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T17:39:26.425Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "20250626173358_init.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Migrations\\20250626173358_init.cs",
               "RelativeDocumentMoniker": "Famiry\\Migrations\\20250626173358_init.cs",
@@ -92,24 +123,24 @@
               "RelativeToolTip": "Famiry\\Migrations\\20250626173358_init.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAgwFwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T17:34:05.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T17:34:05.995Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Entity.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\Entity.cs",
               "RelativeDocumentMoniker": "FamiryEntityLibrary\\Entity.cs",
               "ToolTip": "D:\\Project\\FamiryGitHub\\Famiry\\FamiryEntityLibrary\\Entity.cs",
               "RelativeToolTip": "FamiryEntityLibrary\\Entity.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAgwEEAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAEEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T17:32:57.081Z"
+              "WhenOpened": "2025-06-26T17:32:57.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Famiry.http",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Famiry.http",
               "RelativeDocumentMoniker": "Famiry\\Famiry.http",
@@ -121,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "DataContext.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Data\\DataContext.cs",
               "RelativeDocumentMoniker": "Famiry\\Data\\DataContext.cs",
@@ -133,32 +164,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Program.cs",
               "RelativeDocumentMoniker": "Famiry\\Program.cs",
               "ToolTip": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Program.cs",
               "RelativeToolTip": "Famiry\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACwAAABuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T17:29:35.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T17:29:35.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
               "Title": "EventController.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Controllers\\EventController.cs",
               "RelativeDocumentMoniker": "Famiry\\Controllers\\EventController.cs",
               "ToolTip": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Controllers\\EventController.cs",
               "RelativeToolTip": "Famiry\\Controllers\\EventController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAAB6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T17:17:16.982Z"
+              "WhenOpened": "2025-06-26T17:17:16.982Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 3,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "Famiry\\Controllers\\UserController.cs",
@@ -170,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "CommentController.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Controllers\\CommentController.cs",
               "RelativeDocumentMoniker": "Famiry\\Controllers\\CommentController.cs",
@@ -178,12 +209,11 @@
               "RelativeToolTip": "Famiry\\Controllers\\CommentController.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAgwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T17:17:23.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T17:17:23.897Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "PhotoController.cs",
               "DocumentMoniker": "D:\\Project\\FamiryGitHub\\Famiry\\Famiry\\Controllers\\PhotoController.cs",
               "RelativeDocumentMoniker": "Famiry\\Controllers\\PhotoController.cs",
