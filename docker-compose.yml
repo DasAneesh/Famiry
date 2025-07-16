@@ -97,8 +97,8 @@ services:
     frontend:
       container_name: react-app
       build:
-        context: ./news-client 
-        dockerfile: Dockerfile
+        context: .
+        dockerfile: Famiry-client/Dockerfile
       ports:
         - "3000:5173"
       environment:
