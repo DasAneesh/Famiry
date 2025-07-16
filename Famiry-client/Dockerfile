@@ -9,6 +9,6 @@ RUN npm install
 COPY ./Famiry-client .
 #RUN npm run build
 
-EXPOSE 8080
+EXPOSE 3000
 
-CMD [ "npm", "run", "dev" ]
+CMD [ "npm", "run", "dev","--host" ]
