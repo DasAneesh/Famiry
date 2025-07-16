@@ -104,7 +104,7 @@ services:
       environment:
         VITE_API_URL: "http://famiry:8080"
       depends_on:
-        - newsapi
+        - famiry
       networks:
         - backend
 
