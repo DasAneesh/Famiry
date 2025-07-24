@@ -1,14 +1,14 @@
-export interface CalendarEvent {
+export interface Event {
   id: string;
-  date: Date;
   title: string;
-  description: string;
-  imageUrl?: string;
+  time: string;
+  date: Date;
+  description?: string;
+  link?: string;
 }
 
-export interface DayData {
+export interface WeatherData {
   date: Date;
-  isCurrentMonth: boolean;
-  isToday: boolean;
-  events: CalendarEvent[];
+  temperature: string;
+  conditions?: string;
 }

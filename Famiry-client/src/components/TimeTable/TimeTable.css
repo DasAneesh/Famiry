@@ -1,0 +1,110 @@
+.time-table {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 25px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.time-table h3 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f2f5;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 8px;
+  border: 1px solid #f0f2f5;
+  background: white;
+}
+
+.time-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.time-table th {
+  background-color: #f8f9fa;
+  color: #4b5563;
+  font-weight: 500;
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #f0f2f5;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: sticky;
+  top: 0;
+}
+
+.time-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border: 1px solid #f0f2f5;
+  height: 60px;
+  vertical-align: middle;
+  font-size: 0.95rem;
+  color: #4b5563;
+  transition: background-color 0.2s ease;
+}
+
+.time-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.time-table tr:hover td {
+  background-color: #f5f7ff;
+}
+
+.time-table td:last-child {
+  background-color: #f8f9fa;
+  font-weight: 500;
+  color: #4d6de3;
+  text-align: right;
+  padding-right: 20px;
+  position: sticky;
+  right: 0;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.02);
+}
+
+.time-table .event {
+  background-color: #e0e8ff;
+  border-radius: 6px;
+  padding: 6px 10px;
+  color: #2c3e50;
+  font-weight: 500;
+  display: inline-block;
+  max-width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.2s ease;
+}
+
+.time-table .event:hover {
+  background-color: #d0d8ff;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.time-table .empty-slot {
+  color: #9ca3af;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+/* Анимация для новых событий */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.time-table tr {
+  animation: fadeIn 0.3s ease forwards;
+}

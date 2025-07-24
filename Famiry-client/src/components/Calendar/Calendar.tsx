@@ -1,132 +1,72 @@
-import React, { useState } from 'react';
-import type { DayData, CalendarEvent } from '../../types/types';
-import DayCell from './Daycell';
-import MonthSelector from '../MonthSelector/MonthSelector.tsx';
-import EventModal from '../EventModal/EventModal';
-import './styles.css';
+import React from 'react';
+import './Calendar.css';
 
-const Calendar: React.FC = () => {
-  const [currentDate, setCurrentDate] = useState<Date>(new Date());
-  const [selectedDate, setSelectedDate] = useState<Date | null>(null);
-  const [events, setEvents] = useState<CalendarEvent[]>([]);
-  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+interface CalendarProps {
+  currentDate?: Date;
+  onDateChange?: (date: Date) => void;
+}
 
-  const generateDays = (): DayData[] => {
-    const year = currentDate.getFullYear();
-    const month = currentDate.getMonth();
-    
-    const firstDayOfMonth = new Date(year, month, 1);
-    const lastDayOfMonth = new Date(year, month + 1, 0);
-    
-    const startDay = firstDayOfMonth.getDay();
-    const daysInMonth = lastDayOfMonth.getDate();
-    
-    const days: DayData[] = [];
-    
-    // Добавляем дни предыдущего месяца
-    const prevMonthLastDay = new Date(year, month, 0).getDate();
-    for (let i = startDay - 1; i >= 0; i--) {
-      const date = new Date(year, month - 1, prevMonthLastDay - i);
-      days.push({
-        date,
-        isCurrentMonth: false,
-        isToday: false,
-        events: events.filter(e => 
-          e.date.getDate() === date.getDate() && 
-          e.date.getMonth() === date.getMonth() && 
-          e.date.getFullYear() === date.getFullYear()
-        )
-      });
-    }
-    
-    // Добавляем дни текущего месяца
-    const today = new Date();
-    for (let i = 1; i <= daysInMonth; i++) {
-      const date = new Date(year, month, i);
-      days.push({
-        date,
-        isCurrentMonth: true,
-        isToday: 
-          date.getDate() === today.getDate() && 
-          date.getMonth() === today.getMonth() && 
-          date.getFullYear() === today.getFullYear(),
-        events: events.filter(e => 
-          e.date.getDate() === date.getDate() && 
-          e.date.getMonth() === date.getMonth() && 
-          e.date.getFullYear() === date.getFullYear()
-        )
-      });
-    }
-    
-    // Добавляем дни следующего месяца
-    const daysToAdd = 42 - days.length; // 6 недель
-    for (let i = 1; i <= daysToAdd; i++) {
-      const date = new Date(year, month + 1, i);
-      days.push({
-        date,
-        isCurrentMonth: false,
-        isToday: false,
-        events: events.filter(e => 
-          e.date.getDate() === date.getDate() && 
-          e.date.getMonth() === date.getMonth() && 
-          e.date.getFullYear() === date.getFullYear()
-        )
-      });
-    }
-    
-    return days;
-  };
-
-  const handleDateClick = (date: Date) => {
-    setSelectedDate(date);
-    setIsModalOpen(true);
-  };
-
-  const handleAddEvent = (event: Omit<CalendarEvent, 'id'>) => {
-    const newEvent = {
-      ...event,
-      id: Math.random().toString(36).substr(2, 9)
-    };
-    setEvents([...events, newEvent]);
-    setIsModalOpen(false);
-  };
-
-  const handleDeleteEvent = (id: string) => {
-    setEvents(events.filter(event => event.id !== id));
-  };
-
-  const days = generateDays();
+const Calendar: React.FC<CalendarProps> = ({ currentDate = new Date() }) => {
+  // Получаем первый день месяца
+  const firstDay = new Date(
+    currentDate.getFullYear(),
+    currentDate.getMonth(),
+    1
+  );
+  
+  // Определяем день недели для первого дня месяца (0 - воскресенье, 1 - понедельник и т.д.)
+  const firstDayOfWeek = firstDay.getDay();
+  
+  // Получаем количество дней в месяце
+  const daysInMonth = new Date(
+    currentDate.getFullYear(),
+    currentDate.getMonth() + 1,
+    0
+  ).getDate();
+  
+  // Создаем массив дней месяца
+  const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
+  
+  // Создаем пустые ячейки для дней предыдущего месяца
+  const emptyCells = Array.from({ length: firstDayOfWeek }, (_, i) => i);
+  
+  // Дни недели
+  const weekdays = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'];
 
   return (
-    <div className="calendar-container">
-      <MonthSelector 
-        currentDate={currentDate}
-        onDateChange={setCurrentDate}
-      />
+    <div className="calendar">
+      <div className="headliner">
+        <h2>
+          {currentDate.toLocaleString('default', { month: 'long' })} {currentDate.getFullYear()}
+        </h2>
+      </div>
       
-      <div className="calendar-header">
-        {['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].map(day => (
-          <div key={day} className="calendar-header-day">{day}</div>
+      
+      <div className="weekdays-header">
+        {weekdays.map(day => (
+          <div key={day} className="weekday">{day}</div>
         ))}
       </div>
       
-      <div className="calendar-grid">
-        {days.map((day, index) => (
-          <DayCell 
-            key={index}
-            dayData={day}
-            onClick={() => handleDateClick(day.date)}
-          />
+      <div className="days-grid">
+        {/* Пустые ячейки в начале месяца */}
+        {emptyCells.map((_, index) => (
+          <div key={`empty-${index}`} className="day-cell other-month"></div>
         ))}
+        
+        {/* Дни текущего месяца */}
+        {days.map(day => {
+          const isCurrentDay = day === currentDate.getDate();
+          return (
+            <div 
+              key={day} 
+              className={`day-cell ${isCurrentDay ? 'current-day' : ''}`}
+            >
+              {day}
+            </div>
+          );
+        })}
       </div>
-      
-      {isModalOpen && selectedDate && (
-        <EventModal
-          date={selectedDate}
-          onClose={() => setIsModalOpen(false)}
-          onSave={handleAddEvent}
-        />
-      )}
     </div>
   );
 };

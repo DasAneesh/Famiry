@@ -1,12 +1,14 @@
 import React from 'react';
-import Calendar from './components/Calendar/Calendar';
-import './App.css';
+import { Calendar, EventsList, TimeTable, WeatherInfo, PhotoUpload } from './components';
 
 const App: React.FC = () => {
   return (
     <div className="app">
-      <h1>My Calendar App</h1>
       <Calendar />
+      <EventsList />
+      <TimeTable />
+      <WeatherInfo date={new Date()} temperature="85°/40°" />
+      <PhotoUpload onUpload={(url) => console.log('Uploaded:', url)} />
     </div>
   );
 };

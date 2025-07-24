@@ -1,0 +1,80 @@
+.calendar {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.calendar h2 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.day-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f8f9fa;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 
+    background-color 0.2s ease, 
+    transform 0.1s ease,
+    box-shadow 0.2s ease;
+}
+
+.day-cell:hover {
+  background-color: #e9ecef;
+  transform: scale(1.05);
+}
+
+.day-cell.current-day {
+  background-color: #4d6de3;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(77, 109, 227, 0.3);
+}
+
+.day-cell.other-month {
+  color: #adb5bd;
+  background-color: #f1f3f5;
+}
+
+/* Стили для дней недели над календарем */
+.weekdays-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.weekday {
+  font-size: 0.85rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.headliner
+{
+  background: #020024;
+  background: linear-gradient(200deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+  font-size: 7px;
+  font-weight: 600;
+  font-style: italic; /* Курсивное начертание */
+  font-family: 'Playfair Display', Georgia, serif; /* Красивый шрифт */
+  color: black;
+}

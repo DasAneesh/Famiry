@@ -1,11 +1,27 @@
-.app {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-h1 {
-  text-align: center;
+body {
+  background-color: #f5f7fa;
   color: #333;
+  line-height: 1.6;
+}
+
+.app-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.left-panel {
+  width: 300px;
+}
+
+.main-content {
+  flex: 1;
 }
