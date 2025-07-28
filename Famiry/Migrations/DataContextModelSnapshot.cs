@@ -82,17 +82,28 @@ namespace Famiry.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("PriorityId")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("StartDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("Type")
-                        .IsRequired()
-                        .HasColumnType("text");
+                    b.Property<int>("StatusId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("TypeId")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("PriorityId");
+
+                    b.HasIndex("StatusId");
+
+                    b.HasIndex("TypeId");
 
                     b.ToTable("Event");
                 });
@@ -116,10 +127,6 @@ namespace Famiry.Migrations
                     b.Property<DateTime>("PostTime")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<string>("Status")
-                        .IsRequired()
-                        .HasColumnType("text");
-
                     b.Property<DateTime?>("UpdatedAt")
                         .HasColumnType("timestamp");
 
@@ -131,6 +138,75 @@ namespace Famiry.Migrations
                     b.HasIndex("EventId");
 
                     b.ToTable("Photo");
+                });
+
+            modelBuilder.Entity("FamiryEntityLibrary.Priority", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Priority");
+                });
+
+            modelBuilder.Entity("FamiryEntityLibrary.Status", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Status");
+                });
+
+            modelBuilder.Entity("FamiryEntityLibrary.Type", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Type");
                 });
 
             modelBuilder.Entity("FamiryEntityLibrary.User", b =>
@@ -181,6 +257,33 @@ namespace Famiry.Migrations
                     b.Navigation("Event");
                 });
 
+            modelBuilder.Entity("FamiryEntityLibrary.Event", b =>
+                {
+                    b.HasOne("FamiryEntityLibrary.Priority", "Priority")
+                        .WithMany("Events")
+                        .HasForeignKey("PriorityId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FamiryEntityLibrary.Status", "Status")
+                        .WithMany("Events")
+                        .HasForeignKey("StatusId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("FamiryEntityLibrary.Type", "Type")
+                        .WithMany("Events")
+                        .HasForeignKey("TypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Priority");
+
+                    b.Navigation("Status");
+
+                    b.Navigation("Type");
+                });
+
             modelBuilder.Entity("FamiryEntityLibrary.Photo", b =>
                 {
                     b.HasOne("FamiryEntityLibrary.Event", "Event")
@@ -197,6 +300,21 @@ namespace Famiry.Migrations
                     b.Navigation("Comments");
 
                     b.Navigation("Photos");
+                });
+
+            modelBuilder.Entity("FamiryEntityLibrary.Priority", b =>
+                {
+                    b.Navigation("Events");
+                });
+
+            modelBuilder.Entity("FamiryEntityLibrary.Status", b =>
+                {
+                    b.Navigation("Events");
+                });
+
+            modelBuilder.Entity("FamiryEntityLibrary.Type", b =>
+                {
+                    b.Navigation("Events");
                 });
 #pragma warning restore 612, 618
         }

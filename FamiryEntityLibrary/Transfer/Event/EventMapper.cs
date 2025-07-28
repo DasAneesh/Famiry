@@ -8,15 +8,12 @@ namespace FamiryEntityLibrary.Transfer.Event
 {
     public static class EventMapper
     {
-        public static FamiryEntityLibrary.Event ToEntity(this RequestEventDTO requestEvent)
+        public static FamiryEntityLibrary.Event ToEntity(this RequestEventDTO requestEvent) => new FamiryEntityLibrary.Event
         {
-            return new FamiryEntityLibrary.Event
-            {
-                Id = requestEvent.Id,
-                Name = requestEvent.Name,
-                Type = requestEvent.Type
-            };
-        }
+            Id = requestEvent.Id,
+            Name = requestEvent.Name,
+
+        };
 
 
         public static EventDTO ToDTO(this FamiryEntityLibrary.Event @event)
@@ -24,8 +21,7 @@ namespace FamiryEntityLibrary.Transfer.Event
             return new EventDTO
             {
                 Id = @event.Id,
-                Name = @event.Name,
-                Type = @event.Type
+                Name = @event.Name
 
             };
         }

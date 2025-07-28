@@ -10,7 +10,5 @@ namespace FamiryEntityLibrary.Transfer.Event
     {
 
         public required string Name { get; set; }
-        public required string Type { get; set; }
-        
     }
 }
