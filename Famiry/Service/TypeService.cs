@@ -1,6 +1,11 @@
-﻿namespace Famiry.Service
+﻿using FamiryEntityLibrary.Service;
+using FamiryEntityLibrary;
+using Famiry.Data;
+
+namespace Famiry.Service
 {
-    public class TypeService
+
+    public class TypeService(DataContext dataContext) : DataEntityService<FamiryEntityLibrary.Type>(dataContext)
     {
     }
 }

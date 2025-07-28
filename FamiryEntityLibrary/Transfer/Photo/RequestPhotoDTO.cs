@@ -9,7 +9,7 @@ namespace FamiryEntityLibrary.Transfer.Photo
     public record RequestPhotoDTO
     {
         public int? Id { get; init; }
-        public required string Status { get; set; }
+
         public required int UserId { get; set; }
 
         public required int EventId { get; set; }

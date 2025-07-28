@@ -14,7 +14,6 @@ namespace FamiryEntityLibrary.Transfer.Photo
             return new FamiryEntityLibrary.Photo
             {
                 Id = requestPhoto.Id,
-                Status = requestPhoto.Status,
                 UserId = requestPhoto.UserId,
                 EventId = requestPhoto.EventId,
                 PostTime = requestPhoto.PostTime
@@ -27,7 +26,6 @@ namespace FamiryEntityLibrary.Transfer.Photo
             return new PhotoDTO
             {
                 Id = photo.Id,
-                Status = photo.Status,
                 UserId = photo.UserId,
                 EventId = photo.EventId,
                 PostTime = photo.PostTime

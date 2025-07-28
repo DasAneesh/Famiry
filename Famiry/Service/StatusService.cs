@@ -1,6 +1,11 @@
-﻿namespace Famiry.Service
+﻿using FamiryEntityLibrary.Service;
+using FamiryEntityLibrary;
+using Famiry.Data;
+
+namespace Famiry.Service
 {
-    public class StatusService
+
+    public class StatusService(DataContext dataContext) : DataEntityService<Status>(dataContext)
     {
     }
 }

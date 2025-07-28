@@ -9,7 +9,6 @@ namespace FamiryEntityLibrary.Transfer.Photo
     public record PhotoDTO : IdentifiableEntityDTO
     {
         public required int UserId { get; set; }
-        public required string Status { get; set; }
 
         public required int EventId { get; set; }
 

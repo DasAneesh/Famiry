@@ -61,5 +61,11 @@ namespace Famiry.Data
         public DbSet<Comment> Comments => Set<Comment>();
         public DbSet<User> Users => Set<User>();
         public DbSet<Photo> Photos => Set<Photo>();
+
+        public DbSet<FamiryEntityLibrary.Type> Types => Set<FamiryEntityLibrary.Type>();
+        
+        public DbSet<Priority> Priorities => Set<Priority>();
+
+        public DbSet<Status> Statuses => Set<Status>();
     }
 }

@@ -1,6 +1,7 @@
 
 using Famiry.Data;
 using Famiry.Service;
+using FamiryEntityLibrary;
 using FamiryEntityLibrary.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -52,4 +53,25 @@ async Task InitializeDataSources(WebApplication application)
     var dataContext = scope.ServiceProvider.GetRequiredService<DataContext>();
     await dataContext.TryInitializeAsync();
 
+
+    await scope.ServiceProvider.GetRequiredService<TypeService>().Set(dataContext.Types, new List<FamiryEntityLibrary.Type> {
+                new FamiryEntityLibrary.Type {Id=1,Name="Без типа"},
+                new FamiryEntityLibrary.Type {Id=2,Name="Task"},
+                new FamiryEntityLibrary.Type {Id=3,Name="Event"},
+                new FamiryEntityLibrary.Type {Id=1,Name="Target"},
+            });
+    await scope.ServiceProvider.GetRequiredService<PriorityService>().Set(dataContext.Priorities, new List<Priority> {
+                new Priority {Id=1,Name="Без типа"},
+                new Priority {Id=2,Name="Not Important"},
+                new Priority {Id=3,Name="Important"},
+                new Priority {Id=4,Name="Very Important"},
+                new Priority {Id=5,Name="Slightly Important"},
+                new Priority {Id=6,Name="Emergency" }
+            });
+
+    await scope.ServiceProvider.GetRequiredService<StatusService>().Set(dataContext.Statuses, new List<Status> {
+                new Status {Id=1,Name="Без типа"},
+                new Status {Id=2,Name="completed"},
+                new Status {Id=3,Name="Not complited"}
+            });
 }

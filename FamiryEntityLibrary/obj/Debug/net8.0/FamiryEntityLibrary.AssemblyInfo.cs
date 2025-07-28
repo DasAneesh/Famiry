@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FamiryEntityLibrary")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2adf50d24db68e870a04cc54f0537c420a76635b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6aff90770ea5ee555b38f94d44d4cf61c42aa73")]
 [assembly: System.Reflection.AssemblyProductAttribute("FamiryEntityLibrary")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FamiryEntityLibrary")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

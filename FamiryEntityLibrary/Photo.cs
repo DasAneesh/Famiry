@@ -32,7 +32,6 @@ namespace FamiryEntityLibrary
             }
         }
         public int UserId { get; set; }
-        public string Status { get; set; } = "";
         public DateTime PostTime { get; set; }    
         public int EventId { get; set; }
 
