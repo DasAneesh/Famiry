@@ -1,0 +1,53 @@
+/* src/components/MemberList/MemberList.module.css */
+.container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+  max-width: 300px;
+}
+.title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  text-align: center;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.info {
+  flex: 1;
+  margin: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.name {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+.status {
+  font-size: 0.75rem;
+}
+.online {
+  color: green;
+}
+.offline {
+  color: gray;
+}
+.removeBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}

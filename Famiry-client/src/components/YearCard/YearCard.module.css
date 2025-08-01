@@ -1,0 +1,30 @@
+/* src/components/YearCard/YearCard.module.css */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.5rem;
+}
+.title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4rem, 1fr));
+  gap: 0.5rem;
+}
+.cell {
+  position: relative;
+  cursor: pointer;
+  padding: 0.5rem;
+  text-align: center;
+}
+.dot {
+  position: absolute;
+  bottom: 4px;
+  right: 6px;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: purple;
+}

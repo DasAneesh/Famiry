@@ -2,3 +2,12 @@
 2. Добавление комментария к эвенту (Нажать в календаре на эвент и добавить комментарий и отправить запрос на сервер)
 3. Добавление фото у эвенту (Добавление насольких фоток к комментарию и отправить на сервер достепен простмотр)
 
+Interface TODO:
+
+Importance marker:
+blue - not important
+green - slitly important
+purple - important
+red - emergency important
+
+

@@ -1,0 +1,20 @@
+/* src/components/CardSelector/CardSelector.module.css */
+.container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.button:hover {
+  background: #f5f5f5;
+}
+.active {
+  border-color: #666;
+  font-weight: bold;
+}
